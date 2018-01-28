@@ -1,0 +1,149 @@
+body{
+  background-color:#cccccc;
+}
+
+.wrapper{
+  background-color:#ffffff;
+  width:1024px;
+  height:560px;
+  position:relative;
+  margin:0 auto;
+  top:0;
+}
+
+.out{
+  position:relative;
+  text-align:center;
+  top: 100px;
+  font-size:48px;
+}
+.out span{
+    display: inline-block;
+    width: 35px;
+    height: 53px;
+    position: relative;
+    border-radius: 5px;
+}
+.out span.count_c{
+    display: inline-block;
+    width: 55px;
+    height: 53px;
+    position: relative;
+    border-radius: 5px;
+}
+.out span.input{
+      border: 1px solid #cccccc;
+      background-color: white;
+      white-space: pre;
+      text-align:left;
+          padding-left: 5px;
+}
+
+.out span.input .carriage{
+      height: 41px;
+      margin: 8px -9px 0;
+}
+.out span.input.wrong{
+  color:red;
+}
+.out span.mark{
+  background-color:orange;
+}
+
+.rule{
+  left: 75px;
+  bottom: 100px;
+  background-image:url('./sprite.png');
+  width: 875px;
+  height: 83px;
+  position:absolute;
+
+}
+.inpt{
+     width: 24px;
+    height: 32px;
+    line-height: 32px;
+    position: absolute;
+    text-align: center;
+    font-size: 32px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    background-color: white;
+}
+.inpt.wrong{
+  color:red;
+}
+.inpt.blank{
+  border:none;
+}
+canvas{
+  position:absolute;
+  left:0;
+  top:-100px;
+/*   width:875px;
+  height:120px; */
+}
+.carriage {
+     position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    width: 2px;
+    height: 21px;
+    background-color: #696969;
+    margin: 6px -1px 0;
+    visibility: visible;
+    -ms-animation: __blink 1.1s infinite;
+    -moz-animation: __blink 1.1s infinite;
+    -webkit-animation: __blink 1.1s infinite;
+    animation: __blink 1.1s infinite
+}
+
+@-moz-keyframes blink {
+    50% {
+        opacity: 1
+    }
+
+    100%,51% {
+        opacity: 0
+    }
+}
+
+@-ms-keyframes blink {
+    50% {
+        opacity: 1
+    }
+
+    100%,51% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes __blink {
+    50% {
+        opacity: 1
+    }
+
+    100%,51% {
+        opacity: 0
+    }
+}
+
+@-o-keyframes __blink {
+    50% {
+        opacity: 1
+    }
+
+    100%,51% {
+        opacity: 0
+    }
+}
+
+@keyframes __blink {
+    50% {
+        opacity: 1
+    }
+
+    100%,51% {
+        opacity: 0
+    }
+}
